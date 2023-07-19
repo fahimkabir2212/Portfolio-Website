@@ -25,7 +25,9 @@ h1{
 h2{
     font-size: 4rem;
     font-weight: 700;
+    text-align: center;
 }
+
 
 h3{
     font-size: 2rem;
@@ -36,6 +38,7 @@ p{
     font-size: 1.2rem;
     font-weight: 400;
 }
+
 
 .container{
     width: 1200px;
@@ -49,4 +52,11 @@ p{
     align-content: center;
 }
 
+.acc-col{
+    color: var(--blue);
+}
+
+.section{
+    margin-bottom: 10rem;
+}
 
