@@ -1,0 +1,16 @@
+
+/* HERO SECTION =*/
+.greeting{
+    font-family: 'Esteban', serif;
+    color: var(--blue);  
+    margin: -0.8rem 4px;
+}
+
+.grid-2-col{
+    grid-template-columns: 1.5fr 1fr;
+    /* height: 100%; */
+}
+.hero-image{
+    max-height: 800px;
+}
+
