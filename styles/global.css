@@ -34,6 +34,11 @@ h3{
     font-weight: 700;
 }
 
+h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 p{
     font-size: 1.2rem;
     font-weight: 400;
@@ -60,3 +65,19 @@ p{
     margin-bottom: 10rem;
 }
 
+.project-card-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    gap:3rem;
+    background-color: #141414;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding-left: 3rem; 
+}
+.project-card-reverse:hover{
+    border-left: solid 5px var(--blue) ; 
+    transition: all 100ms ease-in-out;
+}
+.project-card-reverse img{
+    width: 50%;
+}
