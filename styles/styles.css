@@ -150,9 +150,21 @@
     font-weight: 600;
     color: var(--blue);
 }
-.about-sum {
 
+.tech-skill{
+    margin-top: 5rem;
 }
-
+.tech-header{
+    text-align: center;
+}
+.tech-description{
+    text-align: center;
+    color: var(--blue);
+}
+.tech-stack{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
 
 
