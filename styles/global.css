@@ -38,17 +38,15 @@ p{
 }
 
 .container{
-    max-width: 120em;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 3.2rem;
 }
 
-.section{
-    padding: 10rem 0;
-}
 .grid{
     display: grid;
     gap: 9rem;
     align-content: center;
 }
+
 
