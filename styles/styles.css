@@ -5,19 +5,13 @@
     justify-content: space-around;
     align-items: center; 
     padding: 1rem 0;
-    flex-shrink: 1;
-    background-color: var(--black);
 }
 
-.main-nav .open-menu{
-    font-size: 1.5rem;
-    display: none;
-}
+nav .menu {
+    display: flex;
+    list-style: none;
+  }
 
-.main-nav .close-menu{
-    font-size: 1.5rem;
-    display: none;
-}
 
 .logo{
     margin: 16px 0;
@@ -43,7 +37,9 @@
     text-decoration: none;
     font-size: 1.1rem;
     color: var(--white);
-    
+    display: inline-block;
+    padding: 15px;
+    transition: 0.2s ease;  
 }
 
 .menu ul li a:hover{
@@ -53,6 +49,16 @@
     color: #D9D9D9;
 }
 
+.main-nav .open-menu{
+    font-size: 1.5rem;
+    margin: 2rem;
+    display: none;
+}
+
+.main-nav .close-menu{
+    font-size: 1.5rem;
+    display: none;
+}
 
 
 /* HERO SECTION */
@@ -362,28 +368,28 @@
     .main-nav .menu {
         height: 100vh;
         position: fixed;
-        top: -0;
+        top: 0;
         left: 0;
         bottom: 0;
         right: 0;
-        z-index: 10;
+        z-index: 1;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: var(--black);
-        transition: top 1s ease-in-out;
         display: none;
+        transition: top 1s ease-in-out;
     }
 
     .main-nav .close-menu{
-        display: block;
+        display: inline-block;
         position: absolute;
         top: 20px;
         right: 20px;
     }
 
     .main-nav .open-menu{
-       display: block; 
+       display: inline-block; 
     }
     .menu ul{
         display: flex;
@@ -556,16 +562,15 @@
     .main-nav .menu {
         height: 100vh;
         position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: 10000;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: var(--black);
-        transition: top 1s ease;
+        background: var(--black);
+        transition: top 1s ease 0s;
         display: none;
     }
 
