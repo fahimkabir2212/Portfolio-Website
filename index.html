@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Fahim Kabir</title>
     <!-- FAVICON -->
@@ -170,37 +170,41 @@
             <div class="contact-info">
               <h4 class="greeting">Say hello!</h4>
               <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+             <div class="mailp">
               <div class="wrapper">
                 <i class="fa-solid fa-envelope"></i>
                 <div class="email">
                   <p>EMAIL ME</p>
-                  <a href=""Email>fahimkabir2213@gmail.com</a>
+                  <a rel="noopener" target="_blank" href="mailto:fahimkabir2213@gmail.com">fahimkabir2213@gmail.com</a>
                 </div>
               </div>
               <div class="wrapper">
                 <i class="fa-solid fa-phone"></i>
                 <div class="phone-num">
                   <p>EMAIL ME</p>
-                  <a href=""Phone>+8801789492777
+                  <a rel="noopener" target="_blank" href="tel:(880)1789492777"> +880 1789492777
                   </a>
                 </div>
+             </div>
               </div>
               </div>
 
               <div class="contact-form">
-                <form id="form" action="">
+                <form id="form" action="https://formspree.io/f/xyyqzwqo" method="POST">
                   <!-- <div class="sender-info"> -->
-                    <input type="text" id="name" name="name" placeholder="Enter your Name">
+                    <input type="text" id="name" name="name" placeholder="  Name">
 
-                    <input type="email" id="email" name="email" placeholder="Enter your Email">
+                    <input type="email" id="email" name="email" placeholder="   Email">
 
-                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                    <input type="text" id="subject" name="subject" placeholder="  Subject">
                   <!-- </div> -->
 
-                  <input type="text" id="body-text" name="body-text" placeholder="Your message">
+                  <!-- <input type="text" id="body-text" name="body-text" placeholder="Your message"> -->
+                  <textarea name="body-text" id="body-text"   rows="8" placeholder="  Message"></textarea>
+                  <input  type="submit" class ="btn" id="btn">
                 </form>
 
-                <button class ="btn" id="btn" type="submit">Send</button>
+                <!-- <button class ="btn" id="btn" type="submit">Send</button> -->
                 
               </div>
 
@@ -216,8 +220,12 @@
     <!-- ========  GET IN TOUCH  ======== --> 
 
     <!-- SCRIPTS -->
+    <script src="/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://kit.fontawesome.com/1dad131f75.js" crossorigin="anonymous"></script>
 </body>
 <footer>
-  <script src="https://kit.fontawesome.com/1dad131f75.js" crossorigin="anonymous"></script>
+  <p>Designed & developed by <span>A K M Fahim Kabir</span></p>
 </footer>
 </html>

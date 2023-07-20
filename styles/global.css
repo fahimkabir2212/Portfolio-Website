@@ -46,7 +46,7 @@ p{
 
 
 .container{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 3.2rem;
 }
@@ -80,4 +80,21 @@ p{
 }
 .project-card-reverse img{
     width: 50%;
+}
+
+footer{
+    background-color: #1a1a1a;
+
+    
+}
+
+footer p{
+    font-size: 1rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer p span{
+    font-weight: 500;
+    color: var(--blue);
 }
