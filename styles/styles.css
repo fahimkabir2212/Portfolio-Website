@@ -251,6 +251,95 @@
     color: var(--blue);
 }
 
+/* CONTACT ME */
+.contact{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.wrapper{
+    display: flex;
+    color: var(--blue);
+    font-size: 2.5rem;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+
+}
+.contact-info h4{
+    margin: 0;
+    font-size: 1.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.contact-info p {
+    padding-bottom: 0.5rem;
+}
+.phone-num, .email{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.phone-num a,
+.email a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.phone-num a:hover,
+.email a:hover{
+    color: var(--blue);
+}
+
+.phone-num p,
+.email p{
+    color: #d9d9d99a;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* CONTACT FORM */
+
+#form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1.2rem;
+}
+
+.sender-info{
+    display: flex;
+    gap: 1rem;
+}
+
+#btn,#name,#email,#subject,#body-text{
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    border: solid var(--blue) 1px;
+    background-color: #14141400;
+}
+
+#body-text{
+    grid-column: span 3;
+    padding: 4rem 2rem;
+}
+
+#btn{
+    padding: 0.5rem 1.5rem;
+    margin-top: 1.2rem;
+    transition: all 3s fade-in-out;
+}
+
+#btn:hover{
+    background-color: rgba(0, 255, 255, 0.096);
+    
+}
+
+
+/* RESPONSIVE MOBILE */
+
 @media screen and (max-width:450px) {
     .greeting{
         font-family: 'Esteban', serif;
@@ -310,7 +399,6 @@
         
     }
 
-   
 
     .project-card{
         display: inline-block;
@@ -349,6 +437,15 @@
 
     .project-info{
        margin: 1rem;
+    }
+
+    .contact{
+        display: inline-block;
+    }
+    #form{
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
     }
 
     h1{
