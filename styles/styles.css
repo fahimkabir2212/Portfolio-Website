@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center; 
-    /* padding: 0.8rem 1rem; */
+    padding: 1rem 0;
     flex-shrink: 1;
     background-color: var(--black);
 }
@@ -17,12 +17,6 @@
 .main-nav .close-menu{
     font-size: 1.5rem;
     display: none;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
 
 .logo{
@@ -377,7 +371,7 @@
         justify-content: center;
         align-items: center;
         background-color: var(--black);
-        transition: top 1s ease;
+        transition: top 1s ease-in-out;
         display: none;
     }
 
@@ -544,7 +538,7 @@
     .container{
         width: 100vw;
         margin: 0 auto;
-        padding: 0 1.5rem;
+        padding: 1rem 1.5rem;
     }
     .contact-me{
         padding: 0;
@@ -580,6 +574,7 @@
         position: absolute;
         top: 20px;
         right: 20px;
+        
     }
 
     .main-nav .open-menu{
@@ -719,7 +714,7 @@
     .container{
         width: 100vw;
         margin: 0 auto;
-        padding: 0 1.5rem;
+        padding: 1rem 1.5rem;
     }
 
     .mailp{
