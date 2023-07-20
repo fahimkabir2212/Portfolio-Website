@@ -9,11 +9,6 @@
     background-color: var(--black);
 }
 
-.main-nav a{
-    text-decoration: none;
-    color: var(--white);
-}
-
 .main-nav .open-menu{
     font-size: 1.5rem;
     display: none;
@@ -87,9 +82,10 @@
 }
 
 .section-hero{
-    height: 95vh;
+    height: 100vh;
     display: flex;
     align-items: center;
+    padding-bottom: 3rem;
 }
 
 .hero-info{
@@ -541,6 +537,7 @@
         font-weight: 700;
         text-align: center;
     }
+   
     p{
         font-size: 1rem;
     }
