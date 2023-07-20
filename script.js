@@ -21,6 +21,8 @@ function show(){
     mainMenu.style.top = '0';
 }
 function close(){
-    mainMenu.style.display = 'none';
+    setTimeout(() => {
+        mainMenu.style.display = 'none';
+    }, 2000);
     mainMenu.style.top = '-100%';
 }

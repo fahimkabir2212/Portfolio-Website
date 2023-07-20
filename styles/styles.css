@@ -51,13 +51,13 @@ nav .menu {
 
 .main-nav .open-menu{
     font-size: 1.5rem;
-    margin: 2rem;
+    margin: 1rem 1.5rem;
     display: none;
 }
 
 .main-nav .close-menu{
     font-size: 1.5rem;
-    margin: 2rem;
+    margin: 1rem 1.5rem;
     display: none;
 }
 
@@ -386,7 +386,7 @@ nav .menu {
     .main-nav .close-menu{
         display: block;
         position: absolute;
-        top: 40px;
+        top: 20px;
         right: 20px;  
     }
 
