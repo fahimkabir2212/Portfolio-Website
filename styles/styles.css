@@ -4,15 +4,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    margin-top: 1rem;
+    /* padding: 0.8rem 1rem; */
     flex-shrink: 1;
+    background-color: var(--black);
 }
 
-/* .sticky {
+.main-nav .open-menu{
+    font-size: 1.5rem;
+    display: none;
+}
+
+.main-nav .close-menu{
+    font-size: 1.5rem;
+    display: none;
+}
+
+.sticky {
     position: fixed;
     top: 0;
     width: 100%;
-} */
+}
 
 .logo{
     margin: 16px 0;
@@ -21,13 +32,10 @@
     color: var(--white);
 }
 
-.menu{
-   
-}
 
 .menu ul{
     display: flex;
-    gap: 20px;
+    gap: 4rem;
     margin-right: 32px 0;
     list-style: none;
 }
@@ -344,12 +352,31 @@
 
 @media screen and (max-width:450px) {
 
-    .main-nav{
-        max-width: 45rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center; 
-        margin-top: 1rem;
+    .main-nav .menu {
+        height: 100vh;
+        position: fixed;
+        top: -0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--black);
+        transition: top 1s ease;
+        display: none;
+    }
+
+    .main-nav .close-menu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .main-nav .open-menu{
+       display: block; 
     }
     .greeting{
         font-family: 'Esteban', serif;
@@ -483,6 +510,34 @@
 }
 
 @media screen and (max-width:1150px) and (min-width:500px) {
+
+    .main-nav .menu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--black);
+        transition: top 1s ease;
+        display: none;
+    }
+
+    .main-nav .close-menu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .main-nav .open-menu{
+       display: block; 
+    }
+
     .greeting{
         font-family: 'Esteban', serif;
         color: var(--blue);  
