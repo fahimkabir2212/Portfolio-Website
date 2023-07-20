@@ -1,10 +1,10 @@
 /* Nav BAR */
 .main-nav{
-    max-width: 100%;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     align-items: center; 
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
 }
 
 nav .menu {
@@ -23,7 +23,7 @@ nav .menu {
 
 .menu ul{
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
     margin-right: 32px 0;
     list-style: none;
 }
@@ -57,6 +57,7 @@ nav .menu {
 
 .main-nav .close-menu{
     font-size: 1.5rem;
+    margin: 2rem;
     display: none;
 }
 
@@ -363,34 +364,36 @@ nav .menu {
 
     .main-nav{
         justify-content: space-between;
+        margin-top: 1rem;
     }
 
     .main-nav .menu {
         height: 100vh;
         position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: 1;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        z-index: 10;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: var(--black);
+        background: #141414;
+        transition: top 1s ease 0s;
         display: none;
-        transition: top 1s ease-in-out;
     }
 
     .main-nav .close-menu{
-        display: inline-block;
+        display: block;
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 40px;
+        right: 20px;  
     }
 
     .main-nav .open-menu{
-       display: inline-block; 
+       display: block; 
     }
+
     .menu ul{
         display: flex;
         flex-direction: column;
@@ -401,7 +404,7 @@ nav .menu {
     }
     .menu ul li a{
         font-weight: bold;
-        font-size: 1.8rem;
+        font-size: 2.2rem;
     }
 
 
@@ -554,51 +557,6 @@ nav .menu {
 }
 
 @media screen and (max-width:1150px) and (min-width:500px) {
-
-    .main-nav{
-        justify-content: space-between;
-    }
-
-    .main-nav .menu {
-        height: 100vh;
-        position: fixed;
-        top: 0px;
-        right: 0px;
-        left: 0px;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: var(--black);
-        transition: top 1s ease 0s;
-        display: none;
-    }
-
-    .main-nav .close-menu{
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        
-    }
-
-    .main-nav .open-menu{
-       display: block; 
-    }
-
-    .menu ul{
-        display: flex;
-        flex-direction: column;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-    }
-    .menu ul li a{
-        font-weight: bold;
-        font-size: 2.2rem;
-    }
-
     .greeting{
         font-family: 'Esteban', serif;
         color: var(--blue);  

@@ -4,15 +4,23 @@ const closeMenu = document.querySelector('.close-menu');
 
 const openMenu = document.querySelector('.open-menu');
 
-openMenu.addEventListener('click', show);
-closeMenu.addEventListener('click', close);
+const menu_items = document.querySelectorAll('nav .menu li a');
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+// close menu when you click on a menu item 
+menu_items.forEach(item => {
+    item.addEventListener('click',function(){
+        close();
+    })
+})
 
 function show(){
     mainMenu.style.display = 'flex';
-    mainMenu.style.top ='0';
+    mainMenu.style.top = '0';
 }
-
 function close(){
+    mainMenu.style.display = 'none';
     mainMenu.style.top = '-100%';
-
 }
