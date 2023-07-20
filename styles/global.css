@@ -98,3 +98,7 @@ footer p span{
     font-weight: 500;
     color: var(--blue);
 }
+
+#myProjects{
+    margin-top: 3rem;
+}

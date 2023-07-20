@@ -21,17 +21,17 @@
 
     <!-- ========  NAVIGATION BAR  ======== -->
     <header>
-      <nav class = "sticky container main-nav">
-        <div class="logo">fahim.</div>
+      <nav class = "container main-nav">
+        <div class="logo"> <a href="index.html">fahim.</a> </div>
         <!-- HAMBURGER MANU OPEN -->
         <div class="open-menu">
           <i class="fa fa-bars"></i>
         </div>
         <div class="menu">
           <ul>
-            <li> <a href="#about-me">About</a> </li>
-            <li> <a href="">Projects</a> </li>
-            <li> <a href="">Contact</a> </li>
+            <li> <a href="#aboutME">About</a> </li>
+            <li> <a href="#myProjects">Projects</a> </li>
+            <li> <a href="#contactMe">Contact</a> </li>
             <!-- HAMBURGER MANU CLOSE -->
             <div class="close-menu">
               <i class="fa fa-times"></i>
@@ -46,7 +46,8 @@
     <!-- ========  INTRO  ======== --> 
     <main>
       <section class="section-hero">
-        <div class="container">    
+        <div class="container"> 
+          <div class="heroo">  
           <div class="hero-info">
             <p class="greeting">Hello! I am</p>
             <h1>FAHIM KABIR</h1>
@@ -58,13 +59,16 @@
               <a href=""><i class="fa-solid fa-envelope fa-3x"></i></a> 
             </div>
           </div> 
-          <div>  </div>
+          
+          <lottie-player src="https://lottie.host/106a17e0-146b-4f44-af15-5a5ad50e2307/RcvlGDq47r.json" speed="1"  autoplay></lottie-player>
+
         </div>
+      </div> 
       </section>
 
   <!-- ========  ABOUT ME  ======== --> 
 
-      <section class="section about-me">
+      <section id="aboutME" class="section about-me">
         <div class="container">
           <h2 class="section-header">ABOUT <span class="acc-col">ME</span></h2>
           <div class="about">
@@ -106,7 +110,7 @@
       </section>
 
     <!-- ========  PROJECTS  ======== --> 
-      <section class="section projects">
+      <section id="myProjects" class="section projects">
         <div class="container">
           <h2 class="section-header">PROJECT<span class="acc-col">S</span></h2>
 
@@ -164,12 +168,12 @@
             </div>
           </div>
           <!-- PROJECT CARD ENDS -->
-          <p class="read-more-project"><a class="" href="/projectPage.html">read more <i class="fa-solid fa-arrow-right"></i></a></p>
+          <p class="read-more-project"><a class="" href="/projectPage.html"> View all projects <i class="fa-solid fa-arrow-right"></i></a></p>
           
         </div>
       </section>
 
-      <section class="section contact-me">
+      <section id="contactMe" class="section contact-me">
         <div class="container">
           <h2 class="section-header">GET IN <span class="acc-col">TOUCH</span></h2>
 
@@ -226,6 +230,9 @@
 
 
     <!-- ========  GET IN TOUCH  ======== --> 
+
+    <!-- Lottie animation -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <!-- SCRIPTS -->
     <script src="/script.js"></script>

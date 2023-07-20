@@ -2,11 +2,16 @@
 .main-nav{
     max-width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center; 
     /* padding: 0.8rem 1rem; */
     flex-shrink: 1;
     background-color: var(--black);
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: var(--white);
 }
 
 .main-nav .open-menu{
@@ -66,6 +71,19 @@
     font-family: 'Esteban', serif;
     color: var(--blue);  
     margin: -0.8rem 4px;
+}
+
+.heroo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroo lottie-player{
+    background:"transparent"; 
+    width: 400px; 
+    height: 400px;
+    z-index: 1 !important;
 }
 
 .section-hero{
@@ -130,16 +148,11 @@
 .shrink-on-hover {
     display: inline-block;
     vertical-align: middle;
-    -webkit-transform: perspective(0.5px) translateZ(0);
-    transform: perspective(0.5px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    -webkit-transition-property: transform;
     transition-property: transform;
   }
   .shrink-on-hover:hover, .shrink-on-hover:focus, .shrink-on-hover:active {
-    -webkit-transform: scale(0.9);
     transform: scale(0.9);
   }
 
@@ -352,6 +365,10 @@
 
 @media screen and (max-width:450px) {
 
+    .main-nav{
+        justify-content: space-between;
+    }
+
     .main-nav .menu {
         height: 100vh;
         position: fixed;
@@ -378,6 +395,20 @@
     .main-nav .open-menu{
        display: block; 
     }
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .menu ul li a{
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+
+
     .greeting{
         font-family: 'Esteban', serif;
         color: var(--blue);  
@@ -388,6 +419,9 @@
         height: 100vh;
         display: flex;
         align-items: center;
+    }
+    .heroo lottie-player{
+        display: none;
     }
     
     .hero-info{
@@ -407,6 +441,11 @@
     }
     
     .professional-info{
+        width: 100%;  
+        margin-bottom: 2rem;
+    }
+
+    .personal-info{
         width: 100%;  
         margin-bottom: 2rem;
     }
@@ -437,8 +476,8 @@
         
     }
 
-    .last-item{
-        display: hidden;
+    .tech-stack img {
+        width: 70px;
     }
 
     .project-card{
@@ -448,7 +487,7 @@
         padding-bottom: 2rem;
         margin-bottom: 3rem;
     }
-    
+
     .project-card:hover{
         border-right: none; 
         border-bottom: solid 5px var(--blue) ; 
@@ -460,6 +499,7 @@
         gap:3rem;
         background-color: #141414;
         align-items: center;
+        padding-bottom: 2rem;
         margin-bottom: 3rem;
         padding-left: 0; 
     }
@@ -501,15 +541,23 @@
         font-weight: 700;
         text-align: center;
     }
+    p{
+        font-size: 1rem;
+    }
     .container{
         width: 100vw;
         margin: 0 auto;
         padding: 0 1.5rem;
     }
 
+
 }
 
 @media screen and (max-width:1150px) and (min-width:500px) {
+
+    .main-nav{
+        justify-content: space-between;
+    }
 
     .main-nav .menu {
         height: 100vh;
@@ -518,7 +566,7 @@
         left: 0;
         bottom: 0;
         right: 0;
-        z-index: 10;
+        z-index: 10000;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -538,6 +586,19 @@
        display: block; 
     }
 
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .menu ul li a{
+        font-weight: bold;
+        font-size: 2.2rem;
+    }
+
     .greeting{
         font-family: 'Esteban', serif;
         color: var(--blue);  
@@ -549,7 +610,9 @@
         display: flex;
         align-items: center;
     }
-    
+    .heroo lottie-player{
+        display: none;
+    }
     .hero-info{
         width: 60%;
     }
