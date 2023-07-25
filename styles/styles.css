@@ -56,7 +56,7 @@ nav .menu {
 }
 
 .main-nav .close-menu{
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 1rem 1.5rem;
     display: none;
 }
@@ -206,9 +206,23 @@ nav .menu {
     width: 50%;
 }
 
-.project-info{
-    
+.project-card-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    gap:3rem;
+    background-color: #141414;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding-left: 3rem; 
 }
+.project-card-reverse:hover{
+    border-left: solid 5px var(--blue) ; 
+    transition: all 100ms ease-in-out;
+}
+.project-card-reverse img{
+    width: 50%;
+}
+
 .project-title{
     display: flex;
     align-items: center;
@@ -370,16 +384,16 @@ nav .menu {
     .main-nav .menu {
         height: 100vh;
         position: fixed;
-        top: 0px;
+        top: -100px;
         right: 0px;
         left: 0px;
         bottom: 0px;
-        z-index: 10;
+        z-index: 1;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background: #141414;
-        transition: top 1s ease 0s;
+        transition: top 1s ease-in-out 0s;
         display: none;
     }
 
@@ -391,19 +405,21 @@ nav .menu {
     }
 
     .main-nav .open-menu{
-       display: block; 
+       display: block;
+       position: absolute;
+       top: 20px;
+       right: 20px;
     }
 
     .menu ul{
         display: flex;
-        flex-direction: column;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 2rem;
     }
     .menu ul li a{
-        font-weight: bold;
+        font-weight: 700;
         font-size: 2.2rem;
     }
 
@@ -694,5 +710,4 @@ nav .menu {
         gap: 3rem;
     }
     
-
 }

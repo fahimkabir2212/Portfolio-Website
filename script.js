@@ -21,8 +21,8 @@ function show(){
     mainMenu.style.top = '0';
 }
 function close(){
-    setTimeout(() => {
-        mainMenu.style.display = 'none';
-    }, 2000);
+    // setTimeout(() => {
+    //     mainMenu.style.display = 'none';
+    // }, 2000);
     mainMenu.style.top = '-100%';
 }
