@@ -411,6 +411,12 @@ nav .menu {
        right: 20px;
     }
 
+    
+    .main-nav .close-menu:hover,
+    .main-nav .open-menu:hover{
+        color: var(--blue);
+    }
+
     .menu ul{
         display: flex;
         flex-direction: column;
