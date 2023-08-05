@@ -130,6 +130,11 @@ nav .menu {
     margin-bottom: 2.8rem;
 }
 
+.ph{
+    text-decoration: none;
+    color: var(--white);
+}
+
 .btn {
     text-decoration: none;
     color: var(--blue);
